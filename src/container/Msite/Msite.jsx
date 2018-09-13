@@ -58,7 +58,7 @@ class Msite extends Component{
             <div className='home-container'>
                 <div className="tops">
                     <div className="search">
-                        <a href="javascript:;">
+                        <a href='javascript:;'>
                             <img src="//yanxuan-static.nosdn.127.net/hxm/yanxuan-wap/p/20161201/style/img/icon-normal/indexLogo-11d65342f9.png" alt="" />
                         </a>
                         <div className="input">

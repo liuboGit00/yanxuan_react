@@ -8,537 +8,477 @@ body,html{
 }
 
 //Msite
-
-.body
-  width 100%
+#root
   height 100%
-  .home-container
-    background-color #eeeeee
-    margin-bottom 52px
+  height 100%
+  .body
     width 100%
-    >div.tops
-      position fixed
-      left 0
-      top 0
-      z-index 99
-      padding-bottom 10px
-      background-color #ffffff
+    height 100%
+    .home-container
+      background-color #eeeeee
+      margin-bottom 52px
       width 100%
-      .search
-        height 30px
-        padding 6px
-        >a
-          float left
-          width 70px
-          height 20px
-          margin 5px 3px
-          &>img
-            width 100%
-            height 100%
-        >.input
-          height  100%
-          position relative
-          >input
-            box-sizing border-box
-            width 260px
-            height 100%
-            background-color #eee
-            border 1px solid #eee
-            border-radius 8px
-            outline none
-            font-size 14px
-            padding-left 40px
-            margin-left 15px
-          >i
-            margin-left -247px
-      .nav
-        position relative
+      >div.tops
+        position fixed
+        left 0
+        top 0
+        z-index 99
+        padding-bottom 10px
+        background-color #ffffff
         width 100%
-        transform translateZ (1px)
-        color #333333
-        .navList
-          span
+        .search
+          height 30px
+          padding 6px
+          >a
             float left
-            height 40px
-            text-align center
-            line-height 50px
-            font-size 14px
-            margin  0 10px
-            box-sizing border-box
-            &.on
-              color tomato
-              border-bottom 2px solid red
-
-    .banner
-      margin-top 50px
-      width 100%
-      height 200px
-      .swiper-container
-        width 100%
-        height 100%
-        .swiper-wrapper
-          width 100%
-          height 100%
-          .swiper-slide
-            display flex
-            justify-content center
-            align-items flex-start
-            flex-wrap wrap
-            width 100%
-            .link_to_food
-              width 100%
-              .food_container
-                display block
-                width 100%
-                text-align center
-                padding-bottom 10px
-                font-size 0
-                img
-                  display inline-block
-                  width 100%
-        .swiper-pagination
-          >span.swiper-pagination-bullet-active
-            background #02a774
-
-    >ul
-      background-color #ffffff
-      height 40px
-      display flex
-      color #666666
-      font-size 14px
-      justify-content space-around
-      li
-        line-height 40px
-        i.icon-duihaocheckmark17
-          color tomato
-    .pinpai
-      background-color #ffffff
-      margin-top 15px
-      >header
-        line-height 55px
-        text-align center
-      >ul
-        height 240px
-        display flex
-        flex-wrap wrap
-        li
-          position relative
-          padding 8px
-          width 170px
-          height 100px
-          background-color #eeeeee
-          box-sizing border-box
-          margin 5px
-          p
-            line-height 16px
-            font-size 14px
-            color #333
-          img
-            position absolute
-            top 0
-            right 0
-            width 150px
-    .xinpin
-      header
-        position relative
-        margin-top 15px
-        height 130px
-        background url("../../static/image/xinpin.png")
-        background-size 375px 130px
-        >div
-          position absolute
-          top 0
-          right 0
-          bottom 0
-          left 0
-          margin auto
-          width 120px
-          height 60px
-          text-align center
-          padding 10px 0
-          >span
-            display block
-            height 30px
-            line-height 30px
-            color #8BA0B6
-          .look
-            width 100%
-            height 30px
-            line-height 30px
-            background #D8E5F1
-            color #8BA0B6
-            font-size 14px
-      .newCon
-        background-color #ffffff
-        ul
-          height 240px
-          display flex
-          flex-wrap wrap
-          li
-            width 140px
-            padding 16px 5px
-            box-sizing border-box
-            margin 2px 8px
-            img
-              width 100%
-            p
-              line-height 18px
-              color #333
-              font-size 14px
-            span
-              color tomato
-            &.all
-              >div
-                width 100%
-                height 130px
-                line-height 130px
-                border 4px solid #eeeeee
-                text-align center
-                padding-right 10px
-    .hotGoods
-      header
-        position relative
-        margin-top 15px
-        height 130px
-        background url("../../static/image/hotGoods.png")
-        background-size 375px 130px
-        >div
-          position absolute
-          top 0
-          right 0
-          bottom 0
-          left 0
-          margin auto
-          width 140px
-          height 60px
-          text-align center
-          padding 10px 0
-          >span
-            display block
-            height 30px
-            line-height 30px
-            color #B4A078
-          .look
-            width 100%
-            height 30px
-            line-height 30px
-            background #F4E9CB
-            color #B4A078
-            font-size 14px
-      .hotGoodsCon
-        background-color #ffffff
-        ul
-          height 240px
-          display flex
-          flex-wrap wrap
-          li
-            width 140px
-            padding 5px 5px
-            box-sizing border-box
-            margin 2px 8px
-            div
-              width 100%
-              height 140px
-              background-color #eeeeee
-              img
-                width 100%
-            p
-              line-height 18px
-              font-size 14px
-              color #333
-              &.blank
-                height 16px
-              &.mark
-                width 40px
-                height 16px
-                background-color tomato
-                border 1px solid inherit
-                border-radius 5px
-                text-align center
-                line-height 16px
-                color #ffffff
-                font-size 14px
-            span
-              color tomato
-            &.all
-              >div
-                width 100%
-                height 130px
-                line-height 130px
-                border 4px solid #eeeeee
-                text-align center
-    .timer
-      background-color #ffffff
-      margin-top 10px
-      .timeCon
-        width 330px
-        height 160px
-        background-color #ffffff
-        padding 20px 20px 0
-        .computedTime
-          float left
-          width 170px
-          height 100%
-          background-color #ffffff
-          padding 14px
-          box-sizing border-box
-          p
-            letter-spacing 12px
-            padding-top 10px
-          >div
-            span
-              &.hours,&.minute,&.second
-                display inline-block
-                width 30px
-                height 30px
-                background-color #444
-                color #ffffff
-                text-align center
-                line-height 30px
-              &.colon
-                padding 0 3px
-          .div.nextTime
-            font-size 14px
-          .time
-            margin 12px 2px
-        .person
-          position relative
-          float left
-          width 160px
-          height 100%
-          background url("../../static/image/time.png")
-          background-position 10px -8px
-          background-size 160px 160px
-          >div
-            position absolute
-            top 80px
-            right 10px
-            width 48px
-            height 48px
-            border 1px solid #cccccc
-            border-radius 50%
-            background-color rgba(244,143,24,.95)
-            padding 4px
-            box-sizing border-box
-            span
-              color #ffffff
-              font-size 12px
-    .welfare
-      margin-top 10px
-      img
-        width 100%
-    .jujia
-      margin-top 10px
-      >div
-        line-height 60px
-        text-align center
-        font-size 14px
-        padding-bottom 0
-        background-color #ffffff
-      ul.jujiaCon
-        height  850px
-        display flex
-        flex-wrap wrap
-        justify-content space-around
-        li
-          width 170px
-          height 268px
-          line-height 30px
-          margin-top 10px
-          .imgcon
-            width 100%
-            height 170px
-            background-color #f4f4f4
-            img
+            width 70px
+            height 20px
+            margin 5px 3px
+            &>img
               width 100%
               height 100%
-          >p
-            &.title
-              background-color #F1ECE2
-              color #9F8A60
-            &.discount
-              width 30px
-              height 20px
-              background-color tomato
-              color #ffffff
-              line-height 20px
+          >.input
+            height  100%
+            position relative
+            >input
+              box-sizing border-box
+              width 260px
+              height 100%
+              background-color #eee
+              border 1px solid #eee
+              border-radius 8px
+              outline none
               font-size 14px
-              margin 5px 0
-            &.dsc
+              padding-left 40px
+              margin-left 15px
+            >i
+              margin-left -247px
+        .nav
+          position relative
+          width 100%
+          transform translateZ (1px)
+          color #333333
+          .navList
+            span
+              float left
+              height 40px
+              text-align center
+              line-height 50px
               font-size 14px
-            &.price
-              color red
-              line-height 14px
-          &:last-child
-            height 170px
-            background-color #f4f4f4
-            text-align center
-            font-size 18px
-            line-height 20px
-            p
-              margin-top 40%
-              margin-bottom 20px
-    footer
-      color #ffffff
-      background #414141
-      padding 20px 0
-      ul
-        justify-content center
-        display flex
-        background #414141
-        li
-          width 80px
-          height 30px
-          border 1px solid #ffffff
-          text-align center
-          line-height 30px
-          color #ffffff
-          margin 0 5px
-      >p
-        text-align center
-        line-height 34px
-  .shiwu-container
-    background-color #eeeeee
-    margin-bottom 50px
-    >.banner
-      margin-top 5px
-      width 100%
-      height 200px
-      .swiper-container
+              margin  0 10px
+              box-sizing border-box
+              &.on
+                color tomato
+                border-bottom 2px solid red
+
+      .banner
+        margin-top 50px
         width 100%
-        height 100%
-        .swiper-wrapper
+        height 200px
+        .swiper-container
           width 100%
           height 100%
-          .swiper-slide
-            display flex
-            justify-content center
-            align-items flex-start
-            flex-wrap wrap
-            width 90%
-            .link_to_food
-              width 100%
-              .food_container
-                display block
-                width 100%
-                text-align center
-                padding-bottom 10px
-                font-size 0
-                img
-                  display inline-block
-                  width 100%
-        .swiper-pagination
-          >span.swiper-pagination-bullet-active
-            background #02a774
-
-    >.artical
-      position relative
-      padding 15px
-      background-color #ffffff
-      >ul
-        display flex
-        flex-wrap nowrap
-        li
-          width 82px
-          margin-right 15px
-          div.imgCon
+          .swiper-wrapper
             width 100%
+            height 100%
+            .swiper-slide
+              display flex
+              justify-content center
+              align-items flex-start
+              flex-wrap wrap
+              width 100%
+              .link_to_food
+                width 100%
+                .food_container
+                  display block
+                  width 100%
+                  text-align center
+                  padding-bottom 10px
+                  font-size 0
+                  img
+                    display inline-block
+                    width 100%
+          .swiper-pagination
+            >span.swiper-pagination-bullet-active
+              background #02a774
+
+      >ul
+        background-color #ffffff
+        height 40px
+        display flex
+        color #666666
+        font-size 14px
+        justify-content space-around
+        li
+          line-height 40px
+          i.icon-duihaocheckmark17
+            color tomato
+      .pinpai
+        background-color #ffffff
+        margin-top 15px
+        >header
+          line-height 55px
+          text-align center
+        >ul
+          height 240px
+          display flex
+          flex-wrap wrap
+          li
             position relative
+            padding 8px
+            width 170px
+            height 100px
+            background-color #eeeeee
+            box-sizing border-box
+            margin 5px
             p
+              line-height 16px
+              font-size 14px
+              color #333
+            img
               position absolute
               top 0
               right 0
-              font-size 12px
-              color #ffffff
-              text-align right
-              letter-spacing 2px
-            img
-              width 100%
-          p
+              width 150px
+      .xinpin
+        header
+          position relative
+          margin-top 15px
+          height 130px
+          background url("../../static/image/xinpin.png")
+          background-size 375px 130px
+          >div
+            position absolute
+            top 0
+            right 0
+            bottom 0
+            left 0
+            margin auto
+            width 120px
+            height 60px
             text-align center
-            font-size 14px
-            line-height 24px
-    >.recommend
-      background-color #ffffff
-      margin-top 10px
-      >p.recomTitle
-        text-align center
-        line-height 52px
-      >.recomMain
-        width 92%
-        margin auto
-        >.news
-          >div.mainNews
-            position relative
-            border 1px solid #ddd
-            border-radius 8px
-            >span.mark
-              position absolute
-              top 10px
-              left 10px
-              width 60px
-              height 16px
-              border 1px solid transparent
-              font-size 12px
-              background-color #ffffff
-              border-radius 8px
-              text-align center
-              line-height 16px
-            >div.pricedsc
-              line-height 40px
-              >span
-                float left
-                margin-left 5px
-              >p.price
-                float right
-                margin-right 12px
-            >img
-              width 100%
-              height 193px
-            >p
-              color #666
-              font-size 14px
+            padding 10px 0
+            >span
+              display block
+              height 30px
               line-height 30px
-              text-indent 8px
-              padding-bottom 25px
-          >div.newsList1
-            height 136px
-            border 1px solid #ddd
-            border-radius 8px
-            margin 15px 0
-            >div.person
-              width 60%
-              float left
-              height 100%
-              padding 16px
+              color #8BA0B6
+            .look
+              width 100%
+              height 30px
+              line-height 30px
+              background #D8E5F1
+              color #8BA0B6
+              font-size 14px
+        .newCon
+          background-color #ffffff
+          ul
+            height 240px
+            display flex
+            flex-wrap wrap
+            li
+              width 140px
+              padding 16px 5px
               box-sizing border-box
-              .auther
-                >img
+              margin 2px 8px
+              img
+                width 100%
+              p
+                line-height 18px
+                color #333
+                font-size 14px
+              span
+                color tomato
+              &.all
+                >div
+                  width 100%
+                  height 130px
+                  line-height 130px
+                  border 4px solid #eeeeee
+                  text-align center
+                  padding-right 10px
+      .hotGoods
+        header
+          position relative
+          margin-top 15px
+          height 130px
+          background url("../../static/image/hotGoods.png")
+          background-size 375px 130px
+          >div
+            position absolute
+            top 0
+            right 0
+            bottom 0
+            left 0
+            margin auto
+            width 140px
+            height 60px
+            text-align center
+            padding 10px 0
+            >span
+              display block
+              height 30px
+              line-height 30px
+              color #B4A078
+            .look
+              width 100%
+              height 30px
+              line-height 30px
+              background #F4E9CB
+              color #B4A078
+              font-size 14px
+        .hotGoodsCon
+          background-color #ffffff
+          ul
+            height 240px
+            display flex
+            flex-wrap wrap
+            li
+              width 140px
+              padding 5px 5px
+              box-sizing border-box
+              margin 2px 8px
+              div
+                width 100%
+                height 140px
+                background-color #eeeeee
+                img
+                  width 100%
+              p
+                line-height 18px
+                font-size 14px
+                color #333
+                &.blank
+                  height 16px
+                &.mark
+                  width 40px
+                  height 16px
+                  background-color tomato
+                  border 1px solid inherit
+                  border-radius 5px
+                  text-align center
+                  line-height 16px
+                  color #ffffff
+                  font-size 14px
+              span
+                color tomato
+              &.all
+                >div
+                  width 100%
+                  height 130px
+                  line-height 130px
+                  border 4px solid #eeeeee
+                  text-align center
+      .timer
+        background-color #ffffff
+        margin-top 10px
+        .timeCon
+          width 330px
+          height 160px
+          background-color #ffffff
+          padding 20px 20px 0
+          .computedTime
+            float left
+            width 170px
+            height 100%
+            background-color #ffffff
+            padding 14px
+            box-sizing border-box
+            p
+              letter-spacing 12px
+              padding-top 10px
+            >div
+              span
+                &.hours,&.minute,&.second
+                  display inline-block
                   width 30px
                   height 30px
-                  border-radius 50%
-                  vertical-align middle
-                >span
-                  font-size 12px
-                  color #666
-              div.title
-                line-height 40px
-                color #666666
-              div.desc
-                width 150px
-                line-height 20px
-                color #999999
-            >div.pic
-              position relative
-              width 40%
-              float right
-              height 100%
-              >img
+                  background-color #444
+                  color #ffffff
+                  text-align center
+                  line-height 30px
+                &.colon
+                  padding 0 3px
+            .div.nextTime
+              font-size 14px
+            .time
+              margin 12px 2px
+          .person
+            position relative
+            float left
+            width 160px
+            height 100%
+            background url("../../static/image/time.png")
+            background-position 10px -8px
+            background-size 160px 160px
+            >div
+              position absolute
+              top 80px
+              right 10px
+              width 48px
+              height 48px
+              border 1px solid #cccccc
+              border-radius 50%
+              background-color rgba(244,143,24,.95)
+              padding 4px
+              box-sizing border-box
+              span
+                color #ffffff
+                font-size 12px
+      .welfare
+        margin-top 10px
+        img
+          width 100%
+      .jujia
+        margin-top 10px
+        >div
+          line-height 60px
+          text-align center
+          font-size 14px
+          padding-bottom 0
+          background-color #ffffff
+        ul.jujiaCon
+          height  850px
+          display flex
+          flex-wrap wrap
+          justify-content space-around
+          li
+            width 170px
+            height 268px
+            line-height 30px
+            margin-top 10px
+            .imgcon
+              width 100%
+              height 170px
+              background-color #f4f4f4
+              img
                 width 100%
-              >span.markNew
+                height 100%
+            >p
+              &.title
+                background-color #F1ECE2
+                color #9F8A60
+              &.discount
+                width 30px
+                height 20px
+                background-color tomato
+                color #ffffff
+                line-height 20px
+                font-size 14px
+                margin 5px 0
+              &.dsc
+                font-size 14px
+              &.price
+                color red
+                line-height 14px
+            &:last-child
+              height 170px
+              background-color #f4f4f4
+              text-align center
+              font-size 18px
+              line-height 20px
+              p
+                margin-top 40%
+                margin-bottom 20px
+      footer
+        color #ffffff
+        background #414141
+        padding 20px 0
+        ul
+          justify-content center
+          display flex
+          background #414141
+          li
+            width 80px
+            height 30px
+            border 1px solid #ffffff
+            text-align center
+            line-height 30px
+            color #ffffff
+            margin 0 5px
+        >p
+          text-align center
+          line-height 34px
+    .shiwu-container
+      background-color #eeeeee
+      margin-bottom 50px
+      >.banner
+        margin-top 5px
+        width 100%
+        height 200px
+        .swiper-container
+          width 100%
+          height 100%
+          .swiper-wrapper
+            width 100%
+            height 100%
+            .swiper-slide
+              display flex
+              justify-content center
+              align-items flex-start
+              flex-wrap wrap
+              width 90%
+              .link_to_food
+                width 100%
+                .food_container
+                  display block
+                  width 100%
+                  text-align center
+                  padding-bottom 10px
+                  font-size 0
+                  img
+                    display inline-block
+                    width 100%
+          .swiper-pagination
+            >span.swiper-pagination-bullet-active
+              background #02a774
+
+      >.artical
+        position relative
+        padding 15px
+        background-color #ffffff
+        >ul
+          display flex
+          flex-wrap nowrap
+          li
+            width 82px
+            margin-right 15px
+            div.imgCon
+              width 100%
+              position relative
+              p
+                position absolute
+                top 0
+                right 0
+                font-size 12px
+                color #ffffff
+                text-align right
+                letter-spacing 2px
+              img
+                width 100%
+            p
+              text-align center
+              font-size 14px
+              line-height 24px
+      >.recommend
+        background-color #ffffff
+        margin-top 10px
+        >p.recomTitle
+          text-align center
+          line-height 52px
+        >.recomMain
+          width 92%
+          margin auto
+          >.news
+            >div.mainNews
+              position relative
+              border 1px solid #ddd
+              border-radius 8px
+              >span.mark
                 position absolute
                 top 10px
                 left 10px
+                width 60px
                 height 16px
                 border 1px solid transparent
                 font-size 12px
@@ -546,301 +486,515 @@ body,html{
                 border-radius 8px
                 text-align center
                 line-height 16px
-                padding 0 2px
-    >.topic
-      background-color #ffffff
-      .title
-        line-height 50px
-        text-align center
-      .scrollCon
-        padding 5px 0 20px
-        .scrollItem
-          display flex
-          width 650px
-          .example
-            width 290px
-            height 205px
-            background url("//yanxuan-static.nosdn.127.net/hxm/yanxuan-wap/p/20161201/style/img/icon-normal/tenFifteen-2a1d0ea11b.png")
-            background-repeat no-repeat
-            background-position -1px 10px
-            background-size 100% 100%
-            .example_inner
-              .header
-                text-align center
-                padding-top 36px
-                font-size 12px
-                color: #999
-              .title
-                text-align center
-                color #000000
-                font-size 16px
-              .desc
-                text-align center
-                font-size 14px
+              >div.pricedsc
+                line-height 40px
+                >span
+                  float left
+                  margin-left 5px
+                >p.price
+                  float right
+                  margin-right 12px
+              >img
+                width 100%
+                height 193px
+              >p
                 color #666
-              .user
-                >div
-                  display inline-block
-                margin-top 40px
-                text-align center
-                font-size 10px
-                color #bbb
-                .imgCon
-                  font-size 0
+                font-size 14px
+                line-height 30px
+                text-indent 8px
+                padding-bottom 25px
+            >div.newsList1
+              height 136px
+              border 1px solid #ddd
+              border-radius 8px
+              margin 15px 0
+              >div.person
+                width 60%
+                float left
+                height 100%
+                padding 16px
+                box-sizing border-box
+                .auther
                   >img
-                    width 25px
-                    height 25px
+                    width 30px
+                    height 30px
                     border-radius 50%
                     vertical-align middle
-                  >div.dot
-                    display inline-block
-                    width 25px
-                    height 25px
-                    border-radius 50%
-                    background-color #cccccc
-                    color #ffffff
-                    vertical-align middle
-                    font-size 22px
-                    text-align center
-                    line-height 14px
-                .count
-                  display: inline-block
-                  vertical-align middle
-          .more
-            width 290px
-            height 181px
-            border 5px solid #e6e6e6
-            text-align center
-            line-height 205px
-            color #7f7f7f
-            margin-left 15px
-            margin-top 10px
-    >.look
-      background-color #ffffff
-      margin-top 15px
-      .head
-        line-height 52px
-        text-align center
-        color #666666
-      .main
-        >img
-          width 100%
-          height 375px
-        .info
-          padding-bottom 20px
-          .user
-            padding 10px
-            font-size 14px
-            >img
-              width 20px
-              height 20px
-              border-radius 50%
-              vertical-align middle
-          .desc
-            font-size 14px
-            color #7f7f7f
-            padding 8px
-            text-indent 2em
-    >.more
-      width 92%
-      margin auto
-      .lineHeader
-        position relative
-        text-align center
-        line-height 70px
-        font-size 14px
-        &::after
-          content ''
-          height 1px
-          width 100%
-          background-color #d9d9d9
-          position absolute
-          top 50%
-          left 0
-        >span
-          position relative
-          background-color #eeeeee
-          z-index 9
-          padding 5px
-          border-radius 5px
-      .picList
-        margin-bottom 15px
-        padding 10px 10px 24px
-        background-color #ffffff
-        .item
-          >img
-            width 321px
-            height 180px
-          >p
-            line-height 40px
-            font-size 14px
-            color #666666
-  .list-Container
-    position fixed
-    left 0
-    top 0
-    width 100%
-    height:100%
-    overflow hidden
-    margin-top 50px
-    .menu
-      float: left;
-      width 20%
-      height 100%
-      right-border-1px(#ddd)
-      ul.scroll
-        >li
-          width 100%
-          height 40px
-          text-align center
-          line-height 40px
-          font-size 14px
-          margin-top 10px
-          &.on
-            color #ab2b2b
-            border-left 4px solid #ab2b2b
-            box-sizing border-box
-    .con
-      position relative
-      float right
-      width 80%
-      height 100%
-      margin-top 10px
-      .main
-        width 88%
-        margin auto
-        >img
-          width 100%
-          height 96px
-        ul.list1
-          display flex
-          flex-wrap wrap
-          justify-content space-between
-          >li
-            width 72px
-            div.imgCon
-              width 72px
-              height 72px
-              display table-cell
-              text-align center
-              vertical-align middle
-              img
-                width 50px
-                height 50px
-                border-radius 50%
-            div.desc
-              width 100%
-              font-size 14px
-              text-align center
-              margin-top 4px
-              color 999
-              line-height 18px
-        ul.list2
-          >li
-            >header
-              bottom-border-1px(#bbb)
-              width 100%
-              height 40px
-              line-height 40px
-              text-align left
-              letter-spacing 1px
-              font-size 14px
-              color #999999
-            ul.level2
-              display flex
-              flex-wrap wrap
-              justify-content space-between
-              >li
-                width 72px
-                text-align center
-                >div.imgCon
-                  width 72px
-                  height 72px
-                  display table-cell
-                  text-align center
-                  vertical-align middle
-                  img
-                    width 50px
-                    height 50px
-                    border-radius 50%
-                >div.desc
+                  >span
+                    font-size 12px
+                    color #666
+                div.title
+                  line-height 40px
+                  color #666666
+                div.desc
+                  width 150px
+                  line-height 20px
+                  color #999999
+              >div.pic
+                position relative
+                width 40%
+                float right
+                height 100%
+                >img
                   width 100%
-                  font-size 14px
+                >span.markNew
+                  position absolute
+                  top 10px
+                  left 10px
+                  height 16px
+                  border 1px solid transparent
+                  font-size 12px
+                  background-color #ffffff
+                  border-radius 8px
                   text-align center
-                  margin-top 4px
-              color 999
-              line-height 18px
-  .TopHeader
-    height 40px
-    >div.headerCon
-      height 40px
-      background-color #fafafa
-      padding 2px
+                  line-height 16px
+                  padding 0 2px
+      >.topic
+        background-color #ffffff
+        .title
+          line-height 50px
+          text-align center
+        .scrollCon
+          padding 5px 0 20px
+          .scrollItem
+            display flex
+            width 650px
+            .example
+              width 290px
+              height 205px
+              background url("//yanxuan-static.nosdn.127.net/hxm/yanxuan-wap/p/20161201/style/img/icon-normal/tenFifteen-2a1d0ea11b.png")
+              background-repeat no-repeat
+              background-position -1px 10px
+              background-size 100% 100%
+              .example_inner
+                .header
+                  text-align center
+                  padding-top 36px
+                  font-size 12px
+                  color: #999
+                .title
+                  text-align center
+                  color #000000
+                  font-size 16px
+                .desc
+                  text-align center
+                  font-size 14px
+                  color #666
+                .user
+                  >div
+                    display inline-block
+                  margin-top 40px
+                  text-align center
+                  font-size 10px
+                  color #bbb
+                  .imgCon
+                    font-size 0
+                    >img
+                      width 25px
+                      height 25px
+                      border-radius 50%
+                      vertical-align middle
+                    >div.dot
+                      display inline-block
+                      width 25px
+                      height 25px
+                      border-radius 50%
+                      background-color #cccccc
+                      color #ffffff
+                      vertical-align middle
+                      font-size 22px
+                      text-align center
+                      line-height 14px
+                  .count
+                    display: inline-block
+                    vertical-align middle
+            .more
+              width 290px
+              height 181px
+              border 5px solid #e6e6e6
+              text-align center
+              line-height 205px
+              color #7f7f7f
+              margin-left 15px
+              margin-top 10px
+      >.look
+        background-color #ffffff
+        margin-top 15px
+        .head
+          line-height 52px
+          text-align center
+          color #666666
+        .main
+          >img
+            width 100%
+            height 375px
+          .info
+            padding-bottom 20px
+            .user
+              padding 10px
+              font-size 14px
+              >img
+                width 20px
+                height 20px
+                border-radius 50%
+                vertical-align middle
+            .desc
+              font-size 14px
+              color #7f7f7f
+              padding 8px
+              text-indent 2em
+      >.more
+        width 92%
+        margin auto
+        .lineHeader
+          position relative
+          text-align center
+          line-height 70px
+          font-size 14px
+          &::after
+            content ''
+            height 1px
+            width 100%
+            background-color #d9d9d9
+            position absolute
+            top 50%
+            left 0
+          >span
+            position relative
+            background-color #eeeeee
+            z-index 9
+            padding 5px
+            border-radius 5px
+        .picList
+          margin-bottom 15px
+          padding 10px 10px 24px
+          background-color #ffffff
+          .item
+            >img
+              width 321px
+              height 180px
+            >p
+              line-height 40px
+              font-size 14px
+              color #666666
+    .list-Container
       position fixed
       left 0
       top 0
-      z-index 99
       width 100%
-      >div.icon-shouye
-        float left
-        font-size 36px
-        margin-right 33px
-        margin-left 5px
-      >div.iconCon
+      height:100%
+      overflow hidden
+      margin-top 50px
+      .menu
+        float: left;
+        width 20%
+        height 100%
+        right-border-1px(#ddd)
+        ul.scroll
+          >li
+            width 100%
+            height 40px
+            text-align center
+            line-height 40px
+            font-size 14px
+            margin-top 10px
+            &.on
+              color #ab2b2b
+              border-left 4px solid #ab2b2b
+              box-sizing border-box
+      .cons
+        position relative
         float right
-        >div
-          float left
-          margin 5px 6px
-          font-size 24px
-      >img
-        margin 5px 15%
-        width 100px
-  .search-container
-    height 44px
-    position relative
-    bottom-border-1px(#ddd)
-    input
-      margin 9px 15px
-      width 345px
-      height 28px
-      background-color #ddd
-      padding-left 100px
-      box-sizing border-box
-      font-size 12px
-      border-radius 10px
-      outline none
-      line-height 28px
-    i
-      position absolute
-      left 90px
-      top 16px
-      font-size 16px
-      display inline-block
-      vertical-align middle
-  .footer_guide  //footer
-    top-border-1px(#e4e4e4)
-    position fixed
-    z-index 100
-    left 0
-    right 0
-    bottom 0
-    background-color #fff
-    width 100%
-    height 50px
-    display flex
-    .guide_item
-      display flex
-      flex 1
-      text-align center
-      flex-direction column
-      align-items center
-      margin 5px
-      color #999999
-      &.on
-        color tomato
-      span
+        width 80%
+        height 100%
+        margin-top 10px
+        .main
+          width 88%
+          margin auto
+          >img
+            width 100%
+            height 96px
+          ul.list1
+            display flex
+            flex-wrap wrap
+            justify-content space-between
+            >li
+              width 72px
+              div.imgCon
+                width 72px
+                height 72px
+                display table-cell
+                text-align center
+                vertical-align middle
+                img
+                  width 50px
+                  height 50px
+                  border-radius 50%
+              div.desc
+                width 100%
+                font-size 14px
+                text-align center
+                margin-top 4px
+                color 999
+                line-height 18px
+          ul.list2
+            >li
+              >header
+                bottom-border-1px(#bbb)
+                width 100%
+                height 40px
+                line-height 40px
+                text-align left
+                letter-spacing 1px
+                font-size 14px
+                color #999999
+              ul.level2
+                display flex
+                flex-wrap wrap
+                justify-content space-between
+                >li
+                  width 72px
+                  text-align center
+                  >div.imgCon
+                    width 72px
+                    height 72px
+                    display table-cell
+                    text-align center
+                    vertical-align middle
+                    img
+                      width 50px
+                      height 50px
+                      border-radius 50%
+                  >div.desc
+                    width 100%
+                    font-size 14px
+                    text-align center
+                    margin-top 4px
+                color 999
+                line-height 18px
+    .shop-Container
+      width 100%
+      height 100%
+      background-color #f4f4f4
+      header
+        line-height 50px
+        background-color #ffffff
+        color #666666
+        text-align center
+        >span
+          float right
+          margin-left -55px
+          margin-right 21px
+      >ul
+        height 30px
+        display flex
+        justify-content space-around
         font-size 12px
-        margin-top 2px
-        margin-bottom 2px
-        .iconfont
-          font-size 22px
+        color #999999
+        padding 10px 0
+        li
+          list-style circle inside
+      >div.shop
+        width 100%
+        margin-top 120px
+        text-align center
+        vertical-align middle
+        img
+          width 124px
+          height 124px
+      >div.login
+        position absolute
+        left 0
+        right 0
+        margin auto
+        width 240px
+        height 45px
+        text-align center
+        line-height 45px
+        color #ffffff
+        font-size 14px
+        margin-top 15px
+        background-color #b4282d
+    .profile-Container
+      background-color #F2F5F4
+      height 100%
+      width 100%
+      .imgCon
+        height 102px
+        width 100%
+        text-align center
+        padding 120px 0 60px
+        line-height 102px
+        >img
+          width 133px
+          height 45px
+      .phoneLogin
+        width 90%
+        height 46px
+        text-align center
+        line-height 46px
+        color #ffffff
+        background-color #b4282d
+        margin auto
+      .emailLogin
+        width 90%
+        height 46px
+        text-align center
+        line-height 46px
+        color #b4282d
+        border 1px solid #b4282d
+        margin 15px auto
+      >p
+        text-align center
+        font-size 14px
+        color
+        a
+          color #666
+      >ul.icons
+        width 65%
+        line-height 18px
+        display flex
+        justify-content space-between
+        margin 125px auto 0
+        color #bbb
+        font-size 14px
+    .login-Container
+      >.imgCon
+        padding 80px 0 40px
+        text-align center
+        img
+          width 96px
+          height 30px
+      >form
+        width 90%
+        margin 45px auto
+        >p.errorMsg
+          text-align center
+          color red
+        >div.off
+          display none
+        >.Lg
+          input
+            margin 10px 0
+            width 100%
+            height 40px
+            outline none
+            border-bottom 1px solid #ccc
+            padding-left 27px
+            font-size 12px
+            box-sizing border-box
+            letter-spacing 1px
+            &::-webkit-input-placeholder{ /*WebKit browsers*/
+              color: #999;
+            }
+          div.code
+            position relative
+            span.codeBtn
+              position absolute
+              top 5px
+              right 0
+              width 70px
+              height 30px
+              text-align center
+              line-height 30px
+              color #333
+              font-size 12px
+              border 1px solid #cccccc
+              border-radius 5px
+          >p
+            display flex
+            justify-content space-between
+            font-size 14px
+            line-height 30px
+            width 90%
+            margin auto
+            span.error
+              color #999999
+          >div.login,>div.other
+            width 100%
+            height 40px
+            line-height 40px
+            text-align center
+            font-size 14px
+            border-radius 5px
+            margin 22px 0
+          >div.login
+            background-color #b4282d
+            color #ffffff
+          >div.other
+            color #b4282d
+            border 1px solid #b4282d
+    .TopHeader
+      height 40px
+      >div.headerCon
+        height 40px
+        background-color #fafafa
+        padding 2px
+        position fixed
+        left 0
+        top 0
+        z-index 99
+        width 100%
+        >div.icon-shouye
+          float left
+          font-size 36px
+          margin-right 33px
+          margin-left 5px
+        >div.iconCon
+          float right
+          >div
+            float left
+            margin 5px 6px
+            font-size 24px
+        >img
+          margin 5px 15%
+          width 100px
+    .search-container
+      height 44px
+      position relative
+      bottom-border-1px(#ddd)
+      input
+        margin 9px 15px
+        width 345px
+        height 28px
+        background-color #ddd
+        padding-left 100px
+        box-sizing border-box
+        font-size 12px
+        border-radius 10px
+        outline none
+        line-height 28px
+      i
+        position absolute
+        left 90px
+        top 16px
+        font-size 16px
+        display inline-block
+        vertical-align middle
+    .footer_guide  //footer
+      top-border-1px(#e4e4e4)
+      position fixed
+      z-index 100
+      left 0
+      right 0
+      bottom 0
+      background-color #fff
+      width 100%
+      height 50px
+      display flex
+      .guide_item
+        display flex
+        flex 1
+        text-align center
+        flex-direction column
+        align-items center
+        margin 5px
+        color #999999
+        &.on
+          color tomato
+        span
+          font-size 12px
+          margin-top 2px
+          margin-bottom 2px
+          .iconfont
+            font-size 22px

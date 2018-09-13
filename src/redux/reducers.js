@@ -1,7 +1,8 @@
 import {combineReducers} from 'redux'
 import {RECEIVE_HOME_INFO,
         RECEIVE_SHIWU_INFO,
-        RECEIVE_CATEGORY_INFO} from './actions-type'
+        RECEIVE_CATEGORY_INFO,
+        RECEIVE_DETAILS_INFO} from './actions-type'
 
 //home里的数据
 const initHome = {}
@@ -37,11 +38,23 @@ function categoryInfo(preState = initCategory,action) {
       return preState
   }
 }
+//分类里右边的列表数据
+const initDetails = {}
+function detailsInfo(preState = initDetails,actions) {
+  switch (actions.type){
+    case RECEIVE_DETAILS_INFO:
+      const detailsInfo = actions.data
+      return {...detailsInfo}
+    default:
+      return preState
+  }
+}
 
 export default combineReducers({
   homeInfo,
   shiWuInfo,
-  categoryInfo
+  categoryInfo,
+  detailsInfo
 })
 /*
 1. 向外暴露是一个整合后的reducer函数: function (state, action)

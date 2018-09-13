@@ -18,21 +18,21 @@ class NavFooter extends Component {
                     <span className={this.props.location.pathname === '/knowledge' ? 'guide_item on ' : 'guide_item'}
                           onClick={() => {this.props.history.replace('/knowledge')}}>
                         <span className="item_icon">
-                            <i className="iconfont icon-bd-"></i>
+                            <i className="iconfont icon-hui"></i>
                         </span>
                         <span>识物</span>
                     </span>
                     <span className={this.props.location.pathname === '/category' ? 'guide_item on ' : 'guide_item'}
                       onClick={() => {this.props.history.replace('/category')}}>
                         <span className="item_icon">
-                            <i className="iconfont icon-icon"></i>
+                            <i className="iconfont icon-chouti"></i>
                         </span>
                         <span>分类</span>
                     </span>
                     <span className={this.props.location.pathname === '/shopCart' ? 'guide_item on ' : 'guide_item'}
                       onClick={() => {this.props.history.replace('/shopCart')}}>
                         <span className="item_icon">
-                            <i className="iconfont icon-gouwuchekong"></i>
+                            <i className="iconfont icon-tab-bar--n"></i>
                          </span>
                         <span>购物车</span>
                     </span>

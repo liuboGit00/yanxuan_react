@@ -1,6 +1,7 @@
 import {RECEIVE_HOME_INFO,
         RECEIVE_SHIWU_INFO,
-        RECEIVE_CATEGORY_INFO} from './actions-type'
+        RECEIVE_CATEGORY_INFO,
+        RECEIVE_DETAILS_INFO} from './actions-type'
 import {reqHomeInfo,
         reqShiwuInfo,
         reqCategoryInfo} from '../api/index'
@@ -8,6 +9,7 @@ import {reqHomeInfo,
 const receiveHomeInfo = homeInfo => ({type: RECEIVE_HOME_INFO,data:homeInfo});
 const receiveShiWuInfo = shiWuInfo => ({type:RECEIVE_SHIWU_INFO,data:shiWuInfo})
 const receiveCategoryInfo = categoryInfo => ({type:RECEIVE_CATEGORY_INFO,data:categoryInfo})
+const receiveDetailsInfo = detailsInfo => ({type:RECEIVE_DETAILS_INFO,data:detailsInfo})
 
 //异步获取数据
 //home
@@ -40,6 +42,17 @@ export function getCategoryInfo() {
     if (result.code === 0){
       const categoryInfo = result.data
       dispatch(receiveCategoryInfo(categoryInfo))
+    }
+  }
+}
+
+//categorydetails
+export function getCategoryDetails(index) {
+  return async dispatch => {
+    const result = await reqCategoryInfo()
+    if (result.code === 0){
+      const detailsInfo = result.data[index]
+      dispatch(receiveDetailsInfo(detailsInfo))
     }
   }
 }

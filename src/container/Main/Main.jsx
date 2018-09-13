@@ -7,6 +7,7 @@ import Msite from '../../container/Msite/Msite';
 import Profile from '../../container/Profile/Profile';
 import ShopCart from '../../container/ShopCart/ShopCart';
 import NavFooter from '../../components/NavFooter/NavFooter'
+import Login from '../../container/Login/Login'
 
 export default class Main extends Component {
   render() {
@@ -18,6 +19,8 @@ export default class Main extends Component {
           <Route path='/category' component={Category}/>
           <Route path='/shopCart' component={ShopCart}/>
           <Route path='/profile' component={Profile}/>
+          <Route path='/phoneLg' component={Login}/>
+          <Route path='/messageLg' component={Login}/>
           <Route component={Msite}/>
         </Switch>
         <NavFooter />

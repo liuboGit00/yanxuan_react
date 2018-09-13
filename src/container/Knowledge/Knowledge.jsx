@@ -211,7 +211,7 @@ class Knowledge extends Component{
               </div>
               {
                 shiWuInfo.findMore.map((find,index) => (
-                  <div className="picList" key="index">
+                  <div className="picList" key={index}>
                     <div className="item">
                       <img src={find.itemPicUrl} alt="" />
                       <p>{find.title}</p>
