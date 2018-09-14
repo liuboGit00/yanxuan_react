@@ -33,10 +33,12 @@ class Knowledge extends Component{
       })
 
       //每日一刻左右滑动
-      new BScroll('.scrollCon',{
-        click : true,
-        scrollX: true
-      })
+      if (!this.scrollCon){
+        this.scrollCon = new BScroll('.scrollCon',{
+          click : true,
+          scrollX: true
+        })
+      }
 
     }
     render(){

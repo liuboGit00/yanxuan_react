@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {Switch,Route} from 'react-router-dom'
+import {withRouter} from 'react-router-dom'
 
 import Category from '../../container/Category/Category';
 import Knowledge from '../../container/Knowledge/Knowledge';
@@ -9,7 +10,7 @@ import ShopCart from '../../container/ShopCart/ShopCart';
 import NavFooter from '../../components/NavFooter/NavFooter'
 import Login from '../../container/Login/Login'
 
-export default class Main extends Component {
+class Main extends Component {
   render() {
     return (
       <div className='body'>
@@ -23,8 +24,12 @@ export default class Main extends Component {
           <Route path='/messageLg' component={Login}/>
           <Route component={Msite}/>
         </Switch>
-        <NavFooter />
+        {
+          this.props.location.pathname === '/profile' || this.props.location.pathname === '/phoneLg' || this.props.location.pathname === '/messageLg'?
+            null :<NavFooter />
+        }
       </div>
     )
   }
 }
+export default withRouter(Main)

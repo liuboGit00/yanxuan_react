@@ -2,23 +2,58 @@ import React,{Component} from 'react';
 import {connect} from 'react-redux'
 import {getHomeInfo} from '../../redux/actions'
 import BScroll from 'better-scroll'
+import ToTop from '../../components/GoTop/GoTop'
 
 import Swiper from 'swiper'
 
 class Msite extends Component{
     state = {
-      currentIndex: 0
+      currentIndex: 0,
+      hour: 0,
+      minute: 0,
+      seconds: 0
+    }
+    formateTime = (time) => {
+      if (time<10){
+        return '0' + time
+      }else {
+        return time
+      }
     }
     componentDidMount(){
       this.props.getHomeInfo()
+      //计算时间
+      if(!this.timer){
+        this.timer = setInterval(() => {
+          const time = new Date()
+          const hour = time.getHours()
+          const minute = time.getMinutes()
+          const seconds = time.getSeconds()
+
+          this.setState({
+            hour: this.formateTime(hour),
+            minute: this.formateTime(minute),
+            seconds: this.formateTime(seconds)
+          })
+        },1000)
+      }
+
+    }
+    componentWillUnmount(){
+      clearInterval(this.timer)
     }
     componentDidUpdate(){
       const navList = this.navList
+      if (!navList){
+        return
+      }
       navList.style.width = navList.children.length*50 + 'px'
-      new BScroll('.nav',{
-        click : true,
-        scrollX: true
-      })
+      if (!this.scroll){
+        this.scroll = new BScroll('.nav',{
+          click : true,
+          scrollX: true
+        })
+      }
       //引入swiper插件
       new Swiper('.swiper-container', {
         loop: true,  // 循环轮播
@@ -30,24 +65,31 @@ class Msite extends Component{
       //newCon的左右滑动
       const newGoods = this.newGoods
       newGoods.style.width = newGoods.children.length*160 + 'px'
-      new BScroll('.newCon',{
-        click : true,
-        scrollX: true,
-        eventPassthrough: 'vertical'
-      })
+      if (!this.newCon){
+        this.newCon = new BScroll('.newCon',{
+          click : true,
+          scrollX: true,
+          eventPassthrough: 'vertical',
+          isClick : false
+        })
+      }
       //hotCon左右滑动
       const hotGoodsCon = this.hotGoodsCon
       hotGoodsCon.style.width = hotGoodsCon.children.length*160 + 'px'
-      new BScroll('.hotGoodsCon',{
-        click : true,
-        scrollX: true,
-        eventPassthrough: 'vertical'
-      })
+      if (!this.hotGoodsCon){
+        this.hotGoodsCon = new BScroll('.hotGoodsCon',{
+          click : true,
+          scrollX: true,
+          eventPassthrough: 'vertical'
+        })
+      }
     }
     changeIndex = (index) => {
+          // console.log(3333)
         this.setState({
           currentIndex: index
         })
+        console.log('setState',index)
     }
     render(){
         if (!this.props.homeInfo.cateList){
@@ -71,8 +113,8 @@ class Msite extends Component{
                           {
                             this.props.homeInfo.cateList.map((item,index) => (
                               <span key={index}
-                                    onClick={() => this.changeIndex(index)}
-                                    className={this.state.currentIndex === index ? 'on' : ''}>{item.name}</span>
+                              onClick={() => this.changeIndex(index)}
+                              className={this.state.currentIndex === index ? 'on' : ''}>{item.name}</span>
                             ))
                           }
                         </div>
@@ -192,13 +234,13 @@ class Msite extends Component{
                     <div className="computedTime">
                       <p>严选限时购</p>
                       <div className="time">
-                        <span className="hours">00</span>
+                        <span className="hours">{this.state.hour}</span>
                         <span className="colon">:</span>
-                        <span className="minute">00</span>
+                        <span className="minute">{this.state.minute}</span>
                         <span className="colon">:</span>
-                        <span className="second">00</span>
-                        </div>
-                        <div className="nextTime">下一场 <span>10:00</span>开始</div>
+                        <span className="second">{this.state.seconds}</span>
+                      </div>
+                      <div className="nextTime">下一场 <span>10:00</span>开始</div>
                       </div>
                       <div className="person">
                         <div className="price">
@@ -247,6 +289,7 @@ class Msite extends Component{
                   <p>网易公司版权所有 © 1997-</p>
                   <p>食品经营许可证：JY13301080111719</p>
                 </footer>
+                <ToTop />
             </div>
         )
     }
